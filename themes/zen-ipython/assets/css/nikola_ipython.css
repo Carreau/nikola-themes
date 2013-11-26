@@ -28,10 +28,6 @@ padding: 0px;
 color: #333333;
 }
 
-.rendered_html p {
-text-align: left;
-}
-
 .rendered_html ul {
 margin: 0 0 12px 25px;
 }
