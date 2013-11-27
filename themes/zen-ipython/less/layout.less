@@ -77,13 +77,40 @@ section {
     }
 }
 
+
+.prompt {
+    @media @mobileLayout{
+        display:none;
+    }
+}
+
+.input, .output_area{
+    box-orient : vertical;
+    -webkit-box-orient : vertical;
+}
+
+
+div.prompt {
+    transition: all;
+    transition-duration: 1s;;
+    height:0;
+    padding:0;
+    opacity:0;
+
+    &:hover{
+        height:1.5em;
+        padding: 0.6em;
+        opacity:1;
+    }
+}
+
 .page-content {
     min-height: 100%;
     padding: @baseLineHeight * 2 0 @baseLineHeight * 2.5 @contentPadding;
     margin-left: @sidebarWidth + @sidebarPadding;
     background: url('../images/cream-dust.png') @white;
-    max-width:900px;
-    padding-right: @contentNarrowPadding;
+    max-width:800px;
+    padding-right: @contentPadding;
     @media @tabletLayout {
         padding-left: @contentNarrowPadding;
         margin-left: @sidebarNarrowWidth + @sidebarNarrowPadding;
